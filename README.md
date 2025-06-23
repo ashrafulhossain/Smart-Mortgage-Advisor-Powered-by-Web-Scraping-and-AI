@@ -63,4 +63,50 @@ Smart Mortgage Advisor is an AI-powered intelligent chatbot that guides users th
 ├── AI Mortgage Advisor Project-12345.pdf  # Sample document
 
 ```
+---
+
+## 🧩 Dependencies
+
+| Library                          | Purpose                                                              |
+| -------------------------------- | -------------------------------------------------------------------- |
+| **openai**                       | GPT-4 API for recommendation generation                              |
+| **dotenv**                       | Loads `.env` file containing API keys                                |
+| **pdfplumber**                   | Extracts text from PDFs                                              |
+| **pdf2image**                    | Converts PDF pages to images (for OCR)                               |
+| **easyocr**                      | Performs OCR on scanned PDF pages                                    |
+| **pinecone-client**              | Interfaces with Pinecone vector DB *(optional, not in current code)* |
+| **langchain**                    | Splits documents and connects with vector DB & LLMs                  |
+| **faiss-cpu**                    | Local vector search & similarity (stores embedded documents)         |
+| **cloudscraper**                 | Bypasses bot protection for scraping                                 |
+| **beautifulsoup4**               | Parses HTML from scraped webpages                                    |
+| **uuid, os, json, time, shutil** | File handling, system utils, metadata, etc.                          |
+
+
+---
+
+### 🔧 Install all dependencies:
+
+```
+pip install -r requirements.txt
+
+```
+---
+
+### 🔐 Environment Setup – Create a .env file with your API keys
+
+```
+
+OPENAI_API_KEY=your_openai_key_here
+
+```
+
+---
+
+## ▶️ Run the Application
+
+```
+python main.py
+```
+
+---
 

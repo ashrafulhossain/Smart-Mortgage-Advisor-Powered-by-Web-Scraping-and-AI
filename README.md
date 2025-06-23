@@ -27,18 +27,20 @@ Smart Mortgage Advisor is an AI-powered intelligent chatbot that guides users th
 
 ## 🧠 Tech Stack
 
-| Technology              | Purpose                                                |
-| ----------------------- | ------------------------------------------------------ |
-| **Python 3.10+**        | Core programming language                              |
-| **OpenAI GPT-4**        | Generate personalized health recommendations           |
-| **Pinecone**            | Vector database to store and query document embeddings |
-| **FAISS**               | Perform fast local similarity search over embeddings   |
-| **LangChain**           | Chunk and format long text documents                   |
-| **PDFPlumber**          | Extract text from native PDFs                          |
-| **PDF2Image + EasyOCR** | Extract text from scanned PDFs using OCR               |
-| **dotenv**              | Securely load API keys from `.env`                     |
-| **Pickle + JSON**       | Local cache and metadata storage                       |
-| **uuid, glob, os**      | File handling and cleanup utilities                    |
+| Technology                                | Purpose                                                             |
+| ----------------------------------------- | ------------------------------------------------------------------- |
+| **Python 3.10+**                          | Core programming language                                           |
+| **OpenAI GPT-4 (via `langchain_openai`)** | LLM to classify, generate responses, and extract mortgage data      |
+| **LangChain**                             | Framework to orchestrate LLM chains and manage conversation flow    |
+| **FAISS**                                 | Local vector store for efficient semantic search                    |
+| **PDFPlumber**                            | Extract text from native PDF documents                              |
+| **cloudscraper**                          | Bypass Cloudflare and scrape content from mortgage-related websites |
+| **BeautifulSoup4**                        | Parse and clean scraped HTML content                                |
+| **dotenv (`python-dotenv`)**              | Securely load sensitive variables like API keys from `.env` files   |
+| **dataclasses**                           | Manage applicant data as structured objects                         |
+| **uuid / os / json / time / glob**        | Handle file operations, temporary storage, and data processing      |
+| **RecursiveCharacterTextSplitter**        | Split long documents into chunks for embedding                      |
+| **LangChain Community + Core**            | Support for custom document types and schemas                       |
 
 ---
 

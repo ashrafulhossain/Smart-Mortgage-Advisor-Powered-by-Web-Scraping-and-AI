@@ -4,24 +4,6 @@ Smart Mortgage Advisor is an AI-powered intelligent chatbot that guides users th
 
 ---
 
-## 📌 Features
-
-✅ Intelligent mortgage assistant powered by GPT-4
-
-✅ Collects user details conversationally and generates summaries
-
-✅ Scrapes top UK mortgage advice websites for real-time context
-
-✅ Extracts content from both digital and scanned PDFs using OCR
-
-✅ Stores and retrieves contextual info via FAISS vector database
-
-✅ Handles application logic (name, income, property details, etc.)
-
-✅ Summarizes the entire mortgage profile with AI
-
-✅ Prevents secret leaks using .env and .gitignore
-
 
 ---
 
@@ -43,4 +25,26 @@ Smart Mortgage Advisor is an AI-powered intelligent chatbot that guides users th
 | **LangChain Community + Core**            | Support for custom document types and schemas                       |
 
 ---
+
+## 🚀Features
+
+📄 Processes PDF DocumentsExtracts text from local PDF guides and resources using pdfplumber.
+
+🌐 Scrapes Real-Time Mortgage ContentGathers information from top UK mortgage websites using cloudscraper and BeautifulSoup.
+
+🧠 Classifies User Queries SmartlyUses GPT-4 to classify user input into types: application, information, or general.
+
+🗣️ Conversational AI with MemoryChatbot remembers past messages and responds in context using LangChain + GPT-4.
+
+🔍 Semantic Search with FAISSScraped and PDF content is chunked and embedded, then stored in FAISS for fast retrieval.
+
+🧬 Embeddings with OpenAIText chunks are embedded using OpenAI’s embedding model to match user questions.
+
+📚 Real-Time Recommendation GenerationGPT-4 generates answers using retrieved knowledge and chat history.
+
+🧾 Dynamic Mortgage Application CollectionAutomatically collects user mortgage data step-by-step and generates summaries.
+
+🔐 Environment-Safe ConfigurationLoads API keys and configs from .env using python-dotenv.
+
+💾 Lead Storage for Further Follow-UpStores collected applicant info into a local JSON file (leads.json).
 

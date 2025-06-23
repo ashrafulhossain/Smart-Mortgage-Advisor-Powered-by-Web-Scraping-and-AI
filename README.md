@@ -48,3 +48,19 @@ Smart Mortgage Advisor is an AI-powered intelligent chatbot that guides users th
 
 💾 Lead Storage for Further Follow-UpStores collected applicant info into a local JSON file (leads.json).
 
+
+---
+
+
+## 📁 Project Structure
+
+```
+├── bot.py                     # Main logic for the chatbot
+├── faiss_db/                 # Saved FAISS vector index
+├── requirements.txt          # Python dependencies
+├── .env                      # Environment config (not uploaded)
+├── leads.json                # Saved applicant data
+├── AI Mortgage Advisor Project-12345.pdf  # Sample document
+
+```
+

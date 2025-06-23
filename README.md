@@ -27,15 +27,18 @@ Smart Mortgage Advisor is an AI-powered intelligent chatbot that guides users th
 
 ## 🧠 Tech Stack
 
-Technology	Purpose
-Python 3.10+	Core programming language
-OpenAI GPT-4	Generate intelligent conversational responses and recommendations
-FAISS	Fast vector similarity search for document memory
-LangChain	Context management and prompt engineering for LLM interactions
-PDFPlumber	Extract text from native PDF documents
-BeautifulSoup	HTML parsing and cleaning for web scraping
-cloudscraper	Bypass Cloudflare protections during scraping
-dotenv	Load secrets securely from .env file
-uuid, os, json	File operations, lead storage, and system management
-LangChain Embeddings	Generate embeddings for scraped text and PDF content
-ChatOpenAI	GPT-4 interface provided by LangChain
+| Technology              | Purpose                                                |
+| ----------------------- | ------------------------------------------------------ |
+| **Python 3.10+**        | Core programming language                              |
+| **OpenAI GPT-4**        | Generate personalized health recommendations           |
+| **Pinecone**            | Vector database to store and query document embeddings |
+| **FAISS**               | Perform fast local similarity search over embeddings   |
+| **LangChain**           | Chunk and format long text documents                   |
+| **PDFPlumber**          | Extract text from native PDFs                          |
+| **PDF2Image + EasyOCR** | Extract text from scanned PDFs using OCR               |
+| **dotenv**              | Securely load API keys from `.env`                     |
+| **Pickle + JSON**       | Local cache and metadata storage                       |
+| **uuid, glob, os**      | File handling and cleanup utilities                    |
+
+---
+

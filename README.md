@@ -84,7 +84,7 @@ Smart Mortgage Advisor is an AI-powered intelligent chatbot that guides users th
 
 ---
 
-### 🔧 Install all dependencies:
+ 🔧 Install all dependencies:
 
 ```
 pip install -r requirements.txt
@@ -92,7 +92,7 @@ pip install -r requirements.txt
 ```
 ---
 
-### 🔐 Environment Setup – Create a .env file with your API keys
+🔐 Environment Setup – Create a .env file with your API keys
 
 ```
 
@@ -110,3 +110,10 @@ python main.py
 
 ---
 
+## 👨‍💻 Author
+Ashraful Hossain AI Developer | ML Engineer
+
+---
+
+## 📄 License
+MIT License — free for personal and commercial use
